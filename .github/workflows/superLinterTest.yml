@@ -11,6 +11,7 @@ on:
       - main
       - LintTest
 
+permissions: read-all
 #workflow_dispatch:
 
 # workflow / jobs
@@ -18,9 +19,6 @@ jobs:
   build:
     name: Lint
     runs-on: ubuntu-latest
-
-    permissions: read-all
-
 
     steps:
       - name: Checkout code
