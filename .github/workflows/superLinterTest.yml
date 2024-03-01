@@ -1,7 +1,6 @@
 ---
 name: Super Linter Test
 
-# Events
 on:
   push:
     branches:
