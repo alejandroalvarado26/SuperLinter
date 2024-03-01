@@ -1,7 +1,7 @@
+---
 name: Super Linter Test
 
 # Events
-
 on:
   push:
     branches:
@@ -11,21 +11,19 @@ on:
       - main
       - LintTest
 
-  #workflow_dispatch:
+#workflow_dispatch:
 
 # workflow / jobs
-
-
 jobs:
   build:
     name: Lint
     runs-on: ubuntu-latest
 
-    #permissions:
-      #contents: read
-      #packages: read
+    permissions:
+      contents: read
+      packages: read
       # To report GitHub Actions status checks
-      #statuses: write
+      statuses: write
 
     steps:
       - name: Checkout code
